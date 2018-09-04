@@ -1,0 +1,139 @@
+1)
+class Test {
+    static int i;
+    int j;
+     
+    
+    static {
+        i = 10;
+        System.out.println("static block called ");
+    }
+  
+}
+ 
+class Main {
+    public static void main(String args[]) {
+ 
+    
+        System.out.println(Test.i); 
+    }
+}
+------------------------------------------------------------
+2)
+  class Animal 
+  
+  {
+   String breed;
+   String color;
+
+
+   void Speak()
+   {
+       System.out.println("animal class");
+   }
+
+
+   public static void main(String args[])
+   {
+
+   Animal obj1=new Animal();
+   Dog obj2=new Dog();
+   Cat obj3=new Cat();
+
+   obj1.Speak();
+   obj2.Speak();
+   obj3.Speak();
+   }
+
+}
+ 
+	class Dog extends Animal
+    {
+		String breed;
+		String color;
+
+			void Speak()
+            {
+               
+                System.out.println("i am dog");
+            }
+    }
+
+ class Cat extends Animal
+  {
+    String breed;
+    String color;
+
+   void Speak()
+   {                 
+    System.out.println("i am cat");
+   }
+ }
+-----------------------------------------------------------
+3)
+class Base
+{
+
+	public void area()
+	{
+	System.out.println("null argument");
+	}
+
+	public void area(int a)
+	{
+	System.out.println("one integer argument");
+	}
+
+
+	public void area(float x)
+	{
+	System.out.println("one float argument");
+	}
+}
+
+public class Demo12
+{
+	public static void main(String[] args)
+	{
+		Base b=new Base();
+		b.area();
+		b.area(10);
+		b.area(1.2f);
+	}
+}
+------------------------------------------------------------
+4)
+ abstract class VehicleAbstract {
+  abstract void start();
+	public void stop(){
+		System.out.println("Stopping Vehicle in abstract class");
+	}
+}
+class TwoWheeler extends VehicleAbstract{
+
+
+	public void start() {
+		System.out.println("Starting Two Wheeler");
+	}
+
+}
+class FourWheeler extends VehicleAbstract{
+ 
+
+	public void start() {
+		System.out.println("Starting Four Wheeler");
+	}
+}
+
+
+
+class VehicleTesting {
+	public static void main(String[] args) {
+		VehicleAbstract my2Wheeler = new TwoWheeler();
+		VehicleAbstract my4Wheeler = new FourWheeler();
+		my2Wheeler.start();
+		my2Wheeler.stop();
+		my4Wheeler.start();
+		my4Wheeler.stop();
+	}
+}
