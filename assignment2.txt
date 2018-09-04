@@ -1,0 +1,233 @@
+1)-------------------------------
+
+import java.util.Scanner;
+
+public class Abc
+{
+    public static void main(String[] x)
+  {
+Scanner ab=new Scanner(System.in);
+System.out.println("input1");
+int a=ab.nextInt();
+System.out.println("input2");
+int b=ab.nextInt();
+System.out.println(a+b);
+}
+}
+
+2)--------------------------------------------------
+
+import java.util.Scanner;
+public class Abc1
+{
+  public static void main(String[] x)
+  {
+Scanner a=new Scanner(System.in);
+System.out.println("input");
+int b;
+b=a.nextInt();
+if(b%4==0)
+{
+  if(b%100==0)
+  {
+    if(b%400==0)
+    {
+      System.out.println("yes is leap");
+    }
+    else
+    {
+      System.out.println("yes is not leap");
+    }
+  }
+  else{
+    System.out.println("yes is leap");
+  }
+}
+else {
+System.out.println("yes is not leap");
+}
+  }
+}
+
+3)-------------------------------------------------------
+
+import java.util.Scanner;
+public class Jkaw
+{
+public static void main(String[] x)
+{
+Scanner i=new Scanner(System.in);
+int a;
+int b;
+System.out.println("input n");
+int n;
+n=i.nextInt();
+for(a=0;a<n;a++)
+{
+for(b=0;b<a;b++)
+{
+System.out.print("*");
+}
+System.out.print("n");
+
+}
+}
+
+}
+
+4)-----------------------------------------------------------
+
+import java.util.Scanner;
+
+public class Pp
+{
+
+public static void main(String[] x)
+
+{
+Scanner i=new Scanner(System.in);
+int a,b,c;
+
+System.out.println("input a");
+a=i.nextInt();
+
+System.out.println("input b");
+b=i.nextInt();
+
+System.out.println("input c");
+c=i.nextInt();
+if(a>b && a>c)
+{
+System.out.println("a is greatest");
+}
+else if(b>a && b>c)
+{
+System.out.println("b is greatest");
+}
+else
+{
+System.out.println("c is greatest");
+}
+}}
+
+
+5)-----------------------------------------------------------
+
+import java.util.Scanner;
+
+
+public class Jkaw
+{
+
+
+public static void main(String[] x)
+
+
+{
+
+Scanner i=new Scanner(System.in);
+
+
+int num,a,sum=0,rev;
+
+
+System.out.println("input num");
+
+num=i.nextInt();
+a=num;
+while(num!=0)
+
+{
+rev=num%10;
+sum=sum*10+rev;
+num=num/10;
+
+}
+
+if(a==sum)
+
+{
+
+
+System.out.println("it is palindrome");
+
+
+
+}
+
+else
+
+{
+System.out.println("it is not palindrome");
+
+
+}
+
+}
+}
+
+6)-----------------------------------------------------------
+
+import java.util.Scanner;
+public class Prog
+{
+public static void main(String[] x)
+
+{
+Scanner a=new Scanner(System.in);
+
+    int num, j, flag;
+ 
+    System.out.println("input num");
+    num=a.nextInt();
+ 
+    if (num <= 1)
+    {
+        
+        System.out.println("it is not prime");
+    }
+    flag = 0;
+    for (j = 2; j <= num / 2; j++)
+    {
+        if ((num % j) == 0)
+        {
+            flag = 1;
+            break;
+        }
+    }
+    if (flag == 0)
+    {
+            System.out.println("it is  prime");
+        
+     }else
+      {          System.out.println("it is not prime");
+}
+
+}
+}
+
+7)-----------------------------------------------------------
+
+import java.util.Scanner;
+
+public class Pp
+{
+
+public static void main(String[] x)
+
+{
+Scanner i=new Scanner(System.in);
+
+int num,a,sum=0,rev;
+
+System.out.println("input num");
+num=i.nextInt();
+a=num;
+while(num!=0)
+{
+rev=num%10;
+sum=sum*10+rev;
+num=num/10;
+}
+System.out.println(sum);
+}}
