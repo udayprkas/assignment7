@@ -1,0 +1,27 @@
+1)
+
+class PrintHello
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Hello World!");
+	}
+}
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+2)
+
+import java.util.Scanner;
+
+class PrintName
+{
+	public static void main(String[] args)
+	{
+		String s;
+		System.out.println("Enter Your Name");
+		Scanner name=new Scanner(System.in);
+		s=name.nextLine();
+		System.out.println("Hello "+s);
+	}
+}
